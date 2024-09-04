@@ -56,13 +56,13 @@ def set_bd_ibge(list_files=None):
         values = []
         str_output = PATH_OUTPUT.replace("\\","/")
         for idx, file_name in enumerate(list_files, start=1):
-            values.append(f"({idx}, '{file_name}', '{str_output}/{file_name}', '{TODAY}')")
+            values.append(f"('{file_name}', '{str_output}/{file_name}', '{TODAY}')")
 
         values_str = ", ".join(values)
 
         # Crie o comando completo de INSERT
         query_insert = f"""
-            INSERT INTO ibge_report (CodFile, NomeFile, PathFile, DtExtracao)
+            INSERT INTO ibge_report ( NomeFile, PathFile, DtExtracao)
             VALUES {values_str};
         """       
     
