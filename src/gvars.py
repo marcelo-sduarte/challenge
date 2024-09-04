@@ -4,11 +4,13 @@ import pieces
 PROCESS_NAME = "extract_data_ibge"
 
 # paths
-PATH_PROCESS_FOLDER = fr"C:\Users\Documents\Python\Automation"+ pieces.os.sep + PROCESS_NAME
+PATH_PROCESS_FOLDER = fr"C:\Users\marcelo\Documents\Python\Automation"+ pieces.os.sep + PROCESS_NAME
 PATH_OUTPUT = PATH_PROCESS_FOLDER + pieces.os.sep + "output"
 PATH_INPUT = PATH_PROCESS_FOLDER + pieces.os.sep + "input"
 PATH_LOGS = PATH_OUTPUT + pieces.os.sep +"logs"
 PATH_FILES = PATH_OUTPUT + pieces.os.sep +"files"
+
+PATH_DOWNLOAD = fr"C:\Users\marcelo\Downloads"
 
 CHROMEDRIVER = PATH_PROCESS_FOLDER + pieces.os.sep + "src\chromedriver\chromedriver.exe"
 PATH_CHROMEDRIVER = fr"{PATH_PROCESS_FOLDER}\src\chromedriver"
