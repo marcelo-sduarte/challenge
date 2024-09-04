@@ -36,15 +36,15 @@ Copy code
 python -m venv env
 
 4. Revise file [gvars.py] e ajustes os diretorios e credenciais de acesso ao banco que serão utilizados no projeto.
-    4.1 Como padrão esta armazenado na constante PATH_PROCESS_FOLDER  = "C:\Users\Documents\Python\Automation" pode ser ajustado conforme diretório de sua preferência.
-    4.2 As credenciais do banco podem ser salvos temporarialmente no gvars para teste e em produção pode ser usado o cofre de senhas do windows.        
+    Como padrão esta armazenado na constante PATH_PROCESS_FOLDER  = "C:\Users\Documents\Python\Automation" pode ser ajustado conforme diretório de sua preferência.
+    As credenciais do banco podem ser salvos temporarialmente no gvars para teste e em produção pode ser usado o cofre de senhas do windows.        
 
-5. Execute o script principal [src/main.py]:
+6. Execute o script principal [src/main.py]:
 bash
 Copy code
 python main.py
 
-6. Todas as bibliotecas usadas no python constam no file [pieces.py]
+7. Todas as bibliotecas usadas no python constam no file [pieces.py]
 
 
 # Licença
