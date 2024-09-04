@@ -23,6 +23,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.firefox.options import Options
 from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 import time
+import shutil
 from fake_useragent import UserAgent
 
 
