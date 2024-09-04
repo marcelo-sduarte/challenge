@@ -102,7 +102,20 @@ def get_file_ibge(nomeBrowser):
             'code' : -7,
             'message' : msg_erro
              }
-            
+     try:
+        for file_name in lista_anexos:
+            file_path = pieces.os.path.join(PATH_DOWNLOAD, file_name)
+            if pieces.os.path.isfile(file_path):
+                destination_path = pieces.os.path.join(PATH_FILES, file_name)
+                pieces.shutil.move(file_path, destination_path)
+                pieces.logger.info(f'Movendo arquivo: {file_path} para {PATH_FILES}')
+                
+    except Exception as error:
+        pieces.logger.info(msg_erro)
+        return {
+            'code' : -8,
+            'message' : msg_erro
+             }      
     pieces.logger.info(f" [FIM] navega_menu() -> {URL}")
     return {
             'code' : 0,
